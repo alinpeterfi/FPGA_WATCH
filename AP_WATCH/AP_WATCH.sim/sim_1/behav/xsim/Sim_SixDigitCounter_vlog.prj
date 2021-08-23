@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../AP_WATCH.ip_user_files/bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_0_3/sim/SixDigitCounter_util_vector_logic_0_3.v" \
+"../../../../AP_WATCH.ip_user_files/bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_0_4/sim/SixDigitCounter_util_vector_logic_0_4.v" \
+"../../../../AP_WATCH.ip_user_files/bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_0_5/sim/SixDigitCounter_util_vector_logic_0_5.v" \
+"../../../../AP_WATCH.ip_user_files/bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_0_6/sim/SixDigitCounter_util_vector_logic_0_6.v" \
+"../../../../AP_WATCH.ip_user_files/bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_3_0/sim/SixDigitCounter_util_vector_logic_3_0.v" \
+"../../../../AP_WATCH.ip_user_files/bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_0_7/sim/SixDigitCounter_util_vector_logic_0_7.v" \
+"../../../../AP_WATCH.ip_user_files/bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_5_0/sim/SixDigitCounter_util_vector_logic_5_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

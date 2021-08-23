@@ -1,0 +1,47 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/xil/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 24563ba3c086490799ce09ca7af931d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Sim_SixDigitCounter_behav xil_defaultlib.Sim_SixDigitCounter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.BTNMonitor [btnmonitor_default]
+Compiling architecture sixdigitcounter_btnmonitor_0_2_arch of entity xil_defaultlib.SixDigitCounter_BTNMonitor_0_2 [sixdigitcounter_btnmonitor_0_2_d...]
+Compiling architecture sixdigitcounter_btnmonitor_0_3_arch of entity xil_defaultlib.SixDigitCounter_BTNMonitor_0_3 [sixdigitcounter_btnmonitor_0_3_d...]
+Compiling architecture behavioral of entity xil_defaultlib.BtnControl [btncontrol_default]
+Compiling architecture sixdigitcounter_btncontrol_0_2_arch of entity xil_defaultlib.SixDigitCounter_BtnControl_0_2 [sixdigitcounter_btncontrol_0_2_d...]
+Compiling architecture behavioral of entity xil_defaultlib.DataConcat3in [dataconcat3in_default]
+Compiling architecture sixdigitcounter_dataconcat3in_0_1_arch of entity xil_defaultlib.SixDigitCounter_DataConcat3in_0_1 [sixdigitcounter_dataconcat3in_0_...]
+Compiling architecture behavioral of entity xil_defaultlib.DataExpand3out [dataexpand3out_default]
+Compiling architecture sixdigitcounter_dataexpand3out_0_1_arch of entity xil_defaultlib.SixDigitCounter_DataExpand3out_0_1 [sixdigitcounter_dataexpand3out_0...]
+Compiling architecture behavioral of entity xil_defaultlib.CntNbits_L [cntnbits_l_default]
+Compiling architecture sixdigitcounter_cntnbits_l_0_0_arch of entity xil_defaultlib.SixDigitCounter_CntNbits_L_0_0 [sixdigitcounter_cntnbits_l_0_0_d...]
+Compiling architecture behavioral of entity xil_defaultlib.CntNbits_L [\CntNbits_L(limit=5)\]
+Compiling architecture sixdigitcounter_cntnbits_l_0_1_arch of entity xil_defaultlib.SixDigitCounter_CntNbits_L_0_1 [sixdigitcounter_cntnbits_l_0_1_d...]
+Compiling architecture sixdigitcounter_digit1_0_arch of entity xil_defaultlib.SixDigitCounter_Digit1_0 [sixdigitcounter_digit1_0_default]
+Compiling architecture sixdigitcounter_digit2_0_arch of entity xil_defaultlib.SixDigitCounter_Digit2_0 [sixdigitcounter_digit2_0_default]
+Compiling architecture sixdigitcounter_digit3_0_arch of entity xil_defaultlib.SixDigitCounter_Digit3_0 [sixdigitcounter_digit3_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.CntNbits_L [\CntNbits_L(limit=2)\]
+Compiling architecture sixdigitcounter_digit4_0_arch of entity xil_defaultlib.SixDigitCounter_Digit4_0 [sixdigitcounter_digit4_0_default]
+Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
+Compiling module xil_defaultlib.SixDigitCounter_util_vector_logi...
+Compiling module xil_defaultlib.SixDigitCounter_util_vector_logi...
+Compiling module xil_defaultlib.SixDigitCounter_util_vector_logi...
+Compiling module xil_defaultlib.SixDigitCounter_util_vector_logi...
+Compiling module xil_defaultlib.SixDigitCounter_util_vector_logi...
+Compiling architecture structure of entity xil_defaultlib.SixDigitCounter [sixdigitcounter_default]
+Compiling architecture structure of entity xil_defaultlib.SixDigitCounter_wrapper [sixdigitcounter_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_sixdigitcounter
+Built simulation snapshot Sim_SixDigitCounter_behav

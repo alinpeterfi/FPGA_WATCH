@@ -1,0 +1,1132 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x5E81121666BC2686",
+      "device": "xc7a100tcsg324-1",
+      "name": "SixDigitCounter",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "DataExpand6out_0": "",
+      "DataConcat6in_0": "",
+      "Digit0": "",
+      "Digit1": "",
+      "Digit2": "",
+      "Digit3": "",
+      "Digit4": "",
+      "Digit5": "",
+      "BTNMonitor_0": "",
+      "BTNMonitor_1": "",
+      "util_vector_logic_0": "",
+      "util_vector_logic_1": "",
+      "util_vector_logic_2": "",
+      "util_vector_logic_3": "",
+      "util_vector_logic_4": "",
+      "util_vector_logic_5": "",
+      "util_vector_logic_6": "",
+      "BtnControl_0": ""
+    },
+    "ports": {
+      "CLK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "RESETn",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "SixDigitCounter_CLK",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "RESETn": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "MODE": {
+        "direction": "I"
+      },
+      "SET": {
+        "direction": "I"
+      },
+      "CE_Dbg": {
+        "direction": "O"
+      },
+      "Load": {
+        "direction": "I"
+      },
+      "DIN": {
+        "direction": "I",
+        "left": "23",
+        "right": "0"
+      },
+      "TC": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "Q": {
+        "direction": "O",
+        "left": "23",
+        "right": "0"
+      }
+    },
+    "components": {
+      "DataExpand6out_0": {
+        "vlnv": "xilinx.com:module_ref:DataExpand3out:1.0",
+        "xci_name": "SixDigitCounter_DataExpand3out_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "DataExpand3out",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DIN": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "Dout5": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Dout4": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Dout3": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Dout2": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Dout1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Dout0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "DataConcat6in_0": {
+        "vlnv": "xilinx.com:module_ref:DataConcat3in:1.0",
+        "xci_name": "SixDigitCounter_DataConcat3in_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "DataConcat3in",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Din0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Din1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Din2": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Din3": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Din4": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Din5": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      },
+      "Digit0": {
+        "vlnv": "xilinx.com:module_ref:CntNbits_L:1.0",
+        "xci_name": "SixDigitCounter_CntNbits_L_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CntNbits_L",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESETn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "SixDigitCounter_CLK",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "RESETn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "Load": {
+            "direction": "I"
+          },
+          "UnD": {
+            "direction": "I"
+          },
+          "CE": {
+            "direction": "I"
+          },
+          "Din": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TC": {
+            "direction": "O"
+          }
+        }
+      },
+      "Digit1": {
+        "vlnv": "xilinx.com:module_ref:CntNbits_L:1.0",
+        "xci_name": "SixDigitCounter_CntNbits_L_0_1",
+        "parameters": {
+          "LIMIT": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CntNbits_L",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESETn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "SixDigitCounter_CLK",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "RESETn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "Load": {
+            "direction": "I"
+          },
+          "UnD": {
+            "direction": "I"
+          },
+          "CE": {
+            "direction": "I"
+          },
+          "Din": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TC": {
+            "direction": "O"
+          }
+        }
+      },
+      "Digit2": {
+        "vlnv": "xilinx.com:module_ref:CntNbits_L:1.0",
+        "xci_name": "SixDigitCounter_Digit1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CntNbits_L",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESETn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "SixDigitCounter_CLK",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "RESETn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "Load": {
+            "direction": "I"
+          },
+          "UnD": {
+            "direction": "I"
+          },
+          "CE": {
+            "direction": "I"
+          },
+          "Din": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TC": {
+            "direction": "O"
+          }
+        }
+      },
+      "Digit3": {
+        "vlnv": "xilinx.com:module_ref:CntNbits_L:1.0",
+        "xci_name": "SixDigitCounter_Digit2_0",
+        "parameters": {
+          "LIMIT": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CntNbits_L",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESETn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "SixDigitCounter_CLK",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "RESETn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "Load": {
+            "direction": "I"
+          },
+          "UnD": {
+            "direction": "I"
+          },
+          "CE": {
+            "direction": "I"
+          },
+          "Din": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TC": {
+            "direction": "O"
+          }
+        }
+      },
+      "Digit4": {
+        "vlnv": "xilinx.com:module_ref:CntNbits_L:1.0",
+        "xci_name": "SixDigitCounter_Digit3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CntNbits_L",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESETn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "SixDigitCounter_CLK",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "RESETn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "Load": {
+            "direction": "I"
+          },
+          "UnD": {
+            "direction": "I"
+          },
+          "CE": {
+            "direction": "I"
+          },
+          "Din": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TC": {
+            "direction": "O"
+          }
+        }
+      },
+      "Digit5": {
+        "vlnv": "xilinx.com:module_ref:CntNbits_L:1.0",
+        "xci_name": "SixDigitCounter_Digit4_0",
+        "parameters": {
+          "LIMIT": {
+            "value": "2"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CntNbits_L",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESETn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "SixDigitCounter_CLK",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "RESETn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "Load": {
+            "direction": "I"
+          },
+          "UnD": {
+            "direction": "I"
+          },
+          "CE": {
+            "direction": "I"
+          },
+          "Din": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TC": {
+            "direction": "O"
+          }
+        }
+      },
+      "BTNMonitor_0": {
+        "vlnv": "xilinx.com:module_ref:BTNMonitor:1.0",
+        "xci_name": "SixDigitCounter_BTNMonitor_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BTNMonitor",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESETn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "SixDigitCounter_CLK",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "RESETn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "BTN": {
+            "direction": "I"
+          },
+          "CE_Dbg": {
+            "direction": "O"
+          },
+          "StC_Dbg": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "StN_Dbg": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "BTN_Click": {
+            "direction": "O"
+          },
+          "BTN_LongPress": {
+            "direction": "O"
+          },
+          "BTN_LPRelease": {
+            "direction": "O"
+          }
+        }
+      },
+      "BTNMonitor_1": {
+        "vlnv": "xilinx.com:module_ref:BTNMonitor:1.0",
+        "xci_name": "SixDigitCounter_BTNMonitor_0_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BTNMonitor",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESETn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "SixDigitCounter_CLK",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "RESETn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "BTN": {
+            "direction": "I"
+          },
+          "CE_Dbg": {
+            "direction": "O"
+          },
+          "StC_Dbg": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "StN_Dbg": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "BTN_Click": {
+            "direction": "O"
+          },
+          "BTN_LongPress": {
+            "direction": "O"
+          },
+          "BTN_LPRelease": {
+            "direction": "O"
+          }
+        }
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "SixDigitCounter_util_vector_logic_0_3",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "SixDigitCounter_util_vector_logic_0_4",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_2": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "SixDigitCounter_util_vector_logic_0_5",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_3": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "SixDigitCounter_util_vector_logic_0_6",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_4": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "SixDigitCounter_util_vector_logic_3_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_5": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "SixDigitCounter_util_vector_logic_0_7",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_6": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "SixDigitCounter_util_vector_logic_5_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "BtnControl_0": {
+        "vlnv": "xilinx.com:module_ref:BtnControl:1.0",
+        "xci_name": "SixDigitCounter_BtnControl_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BtnControl",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "MODE_Click": {
+            "direction": "I"
+          },
+          "MODE_LP": {
+            "direction": "I"
+          },
+          "SET_Click": {
+            "direction": "I"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "SixDigitCounter_CLK",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "Q_in": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "CE_S": {
+            "direction": "O"
+          },
+          "CE_M": {
+            "direction": "O"
+          },
+          "CE_H": {
+            "direction": "O"
+          },
+          "UnD_S": {
+            "direction": "O"
+          },
+          "UnD_HM": {
+            "direction": "O"
+          },
+          "RESETn_S": {
+            "direction": "O"
+          },
+          "RESETn_HM": {
+            "direction": "O"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "CLK_1": {
+        "ports": [
+          "CLK",
+          "Digit0/CLK",
+          "Digit1/CLK",
+          "Digit2/CLK",
+          "Digit3/CLK",
+          "Digit4/CLK",
+          "Digit5/CLK",
+          "BTNMonitor_0/CLK",
+          "BTNMonitor_1/CLK",
+          "BtnControl_0/CLK"
+        ]
+      },
+      "DataExpand3out_0_Dout0": {
+        "ports": [
+          "DataExpand6out_0/Dout0",
+          "Digit0/Din"
+        ]
+      },
+      "DataExpand3out_0_Dout1": {
+        "ports": [
+          "DataExpand6out_0/Dout1",
+          "Digit1/Din"
+        ]
+      },
+      "DataExpand3out_0_Dout2": {
+        "ports": [
+          "DataExpand6out_0/Dout2",
+          "Digit2/Din"
+        ]
+      },
+      "DataExpand3out_0_Dout3": {
+        "ports": [
+          "DataExpand6out_0/Dout3",
+          "Digit3/Din"
+        ]
+      },
+      "DataExpand3out_0_Dout4": {
+        "ports": [
+          "DataExpand6out_0/Dout4",
+          "Digit4/Din"
+        ]
+      },
+      "DataExpand3out_0_Dout5": {
+        "ports": [
+          "DataExpand6out_0/Dout5",
+          "Digit5/Din"
+        ]
+      },
+      "Digit5_Q": {
+        "ports": [
+          "Digit5/Q",
+          "DataConcat6in_0/Din5"
+        ]
+      },
+      "Digit4_Q": {
+        "ports": [
+          "Digit4/Q",
+          "DataConcat6in_0/Din4"
+        ]
+      },
+      "Digit3_Q": {
+        "ports": [
+          "Digit3/Q",
+          "DataConcat6in_0/Din3"
+        ]
+      },
+      "Digit2_Q": {
+        "ports": [
+          "Digit2/Q",
+          "DataConcat6in_0/Din2"
+        ]
+      },
+      "Digit1_Q": {
+        "ports": [
+          "Digit1/Q",
+          "DataConcat6in_0/Din1"
+        ]
+      },
+      "Digit0_Q": {
+        "ports": [
+          "Digit0/Q",
+          "DataConcat6in_0/Din0"
+        ]
+      },
+      "MODE_1": {
+        "ports": [
+          "MODE",
+          "BTNMonitor_0/BTN"
+        ]
+      },
+      "SET_1": {
+        "ports": [
+          "SET",
+          "BTNMonitor_1/BTN"
+        ]
+      },
+      "BTNMonitor_0_CE_Dbg": {
+        "ports": [
+          "BTNMonitor_0/CE_Dbg",
+          "CE_Dbg"
+        ]
+      },
+      "BTNMonitor_0_BTN_Click": {
+        "ports": [
+          "BTNMonitor_0/BTN_Click",
+          "BtnControl_0/MODE_Click"
+        ]
+      },
+      "BTNMonitor_0_BTN_LongPress": {
+        "ports": [
+          "BTNMonitor_0/BTN_LongPress",
+          "BtnControl_0/MODE_LP"
+        ]
+      },
+      "BTNMonitor_1_BTN_Click": {
+        "ports": [
+          "BTNMonitor_1/BTN_Click",
+          "BtnControl_0/SET_Click"
+        ]
+      },
+      "RESETn_1": {
+        "ports": [
+          "RESETn",
+          "BTNMonitor_0/RESETn",
+          "BTNMonitor_1/RESETn"
+        ]
+      },
+      "UnD_1": {
+        "ports": [
+          "BtnControl_0/UnD_HM",
+          "Digit2/UnD",
+          "Digit3/UnD",
+          "Digit4/UnD",
+          "Digit5/UnD"
+        ]
+      },
+      "Load_1": {
+        "ports": [
+          "Load",
+          "Digit0/Load",
+          "Digit5/Load",
+          "Digit4/Load",
+          "Digit3/Load",
+          "Digit2/Load",
+          "Digit1/Load"
+        ]
+      },
+      "DIN_1": {
+        "ports": [
+          "DIN",
+          "DataExpand6out_0/DIN"
+        ]
+      },
+      "BtnControl_0_RESETn_S": {
+        "ports": [
+          "BtnControl_0/RESETn_S",
+          "Digit0/RESETn",
+          "Digit1/RESETn"
+        ]
+      },
+      "BtnControl_0_UnD_S": {
+        "ports": [
+          "BtnControl_0/UnD_S",
+          "Digit0/UnD",
+          "Digit1/UnD"
+        ]
+      },
+      "Digit0_TC": {
+        "ports": [
+          "Digit0/TC",
+          "Digit1/CE",
+          "util_vector_logic_3/Op2"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "Digit2/CE",
+          "util_vector_logic_5/Op2"
+        ]
+      },
+      "BtnControl_0_CE_H": {
+        "ports": [
+          "BtnControl_0/CE_H",
+          "util_vector_logic_1/Op2"
+        ]
+      },
+      "util_vector_logic_1_Res": {
+        "ports": [
+          "util_vector_logic_1/Res",
+          "Digit4/CE",
+          "util_vector_logic_6/Op2"
+        ]
+      },
+      "util_vector_logic_2_Res": {
+        "ports": [
+          "util_vector_logic_2/Res",
+          "TC"
+        ]
+      },
+      "Digit5_TC": {
+        "ports": [
+          "Digit5/TC",
+          "util_vector_logic_2/Op1"
+        ]
+      },
+      "util_vector_logic_3_Res": {
+        "ports": [
+          "util_vector_logic_3/Res",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "Digit1_TC": {
+        "ports": [
+          "Digit1/TC",
+          "util_vector_logic_3/Op1"
+        ]
+      },
+      "util_vector_logic_4_Res": {
+        "ports": [
+          "util_vector_logic_4/Res",
+          "util_vector_logic_1/Op1"
+        ]
+      },
+      "Digit3_TC": {
+        "ports": [
+          "Digit3/TC",
+          "util_vector_logic_4/Op1"
+        ]
+      },
+      "util_vector_logic_5_Res": {
+        "ports": [
+          "util_vector_logic_5/Res",
+          "Digit3/CE",
+          "util_vector_logic_4/Op2"
+        ]
+      },
+      "Digit2_TC": {
+        "ports": [
+          "Digit2/TC",
+          "util_vector_logic_5/Op1"
+        ]
+      },
+      "util_vector_logic_6_Res": {
+        "ports": [
+          "util_vector_logic_6/Res",
+          "Digit5/CE",
+          "util_vector_logic_2/Op2"
+        ]
+      },
+      "Digit4_TC": {
+        "ports": [
+          "Digit4/TC",
+          "util_vector_logic_6/Op1"
+        ]
+      },
+      "BtnControl_0_CE_M": {
+        "ports": [
+          "BtnControl_0/CE_M",
+          "util_vector_logic_0/Op2"
+        ]
+      },
+      "BtnControl_0_CE_S": {
+        "ports": [
+          "BtnControl_0/CE_S",
+          "Digit0/CE"
+        ]
+      },
+      "DataConcat3in_0_Dout": {
+        "ports": [
+          "DataConcat6in_0/Dout",
+          "BtnControl_0/Q_in"
+        ]
+      },
+      "BtnControl_0_Q": {
+        "ports": [
+          "BtnControl_0/Q",
+          "Q"
+        ]
+      },
+      "BtnControl_0_RESETn_HM": {
+        "ports": [
+          "BtnControl_0/RESETn_HM",
+          "Digit2/RESETn",
+          "Digit3/RESETn",
+          "Digit4/RESETn",
+          "Digit5/RESETn"
+        ]
+      }
+    }
+  }
+}

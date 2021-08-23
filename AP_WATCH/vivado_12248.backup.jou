@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Feb  3 13:06:15 2021
+# Process ID: 12248
+# Current directory: C:/VIVADO_SFPGA/AP_WATCH
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11560 C:\VIVADO_SFPGA\AP_WATCH\AP_WATCH.xpr
+# Log file: C:/VIVADO_SFPGA/AP_WATCH/vivado.log
+# Journal file: C:/VIVADO_SFPGA/AP_WATCH\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/VIVADO_SFPGA/AP_WATCH/AP_WATCH.xpr
+update_compile_order -fileset sources_1

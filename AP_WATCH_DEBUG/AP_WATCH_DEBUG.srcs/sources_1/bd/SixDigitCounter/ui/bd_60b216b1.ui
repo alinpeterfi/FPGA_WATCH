@@ -1,0 +1,81 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.612004",
+   "Default View_TopLeft":"-167,20",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port CLK -pg 1 -lvl 0 -x -60 -y 430 -defaultsOSRD
+preplace port RESETn -pg 1 -lvl 0 -x -60 -y 410 -defaultsOSRD
+preplace port UnD -pg 1 -lvl 0 -x -60 -y 390 -defaultsOSRD
+preplace port MODE -pg 1 -lvl 0 -x -60 -y 680 -defaultsOSRD
+preplace port SET -pg 1 -lvl 0 -x -60 -y 900 -defaultsOSRD
+preplace port CE_Dbg -pg 1 -lvl 15 -x 4990 -y 610 -defaultsOSRD
+preplace port CE -pg 1 -lvl 0 -x -60 -y 290 -defaultsOSRD
+preplace port ADJ -pg 1 -lvl 15 -x 4990 -y 830 -defaultsOSRD
+preplace port HS -pg 1 -lvl 15 -x 4990 -y 850 -defaultsOSRD
+preplace port INC -pg 1 -lvl 15 -x 4990 -y 870 -defaultsOSRD
+preplace port Load -pg 1 -lvl 0 -x -60 -y 240 -defaultsOSRD
+preplace portBus TC -pg 1 -lvl 15 -x 4990 -y 540 -defaultsOSRD
+preplace portBus Q -pg 1 -lvl 15 -x 4990 -y 280 -defaultsOSRD
+preplace portBus DIN -pg 1 -lvl 0 -x -60 -y 260 -defaultsOSRD
+preplace inst DataExpand3out_0 -pg 1 -lvl 1 -x 120 -y 260 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 6 -x 2090 -y 320 -defaultsOSRD
+preplace inst util_vector_logic_2 -pg 1 -lvl 8 -x 2790 -y 280 -defaultsOSRD
+preplace inst util_vector_logic_3 -pg 1 -lvl 10 -x 3490 -y 320 -defaultsOSRD
+preplace inst util_vector_logic_4 -pg 1 -lvl 12 -x 4210 -y 320 -defaultsOSRD
+preplace inst util_vector_logic_5 -pg 1 -lvl 14 -x 4820 -y 540 -defaultsOSRD
+preplace inst DataConcat3in_0 -pg 1 -lvl 14 -x 4820 -y 280 -defaultsOSRD
+preplace inst Digit0 -pg 1 -lvl 3 -x 810 -y 260 -defaultsOSRD
+preplace inst Digit1 -pg 1 -lvl 4 -x 1410 -y 140 -defaultsOSRD
+preplace inst Digit2 -pg 1 -lvl 7 -x 2450 -y 130 -defaultsOSRD
+preplace inst Digit3 -pg 1 -lvl 9 -x 3130 -y 130 -defaultsOSRD
+preplace inst Digit4 -pg 1 -lvl 11 -x 3850 -y 130 -defaultsOSRD
+preplace inst Digit5 -pg 1 -lvl 13 -x 4520 -y 440 -defaultsOSRD
+preplace inst BTNMonitor_0 -pg 1 -lvl 2 -x 450 -y 660 -defaultsOSRD
+preplace inst BTNMonitor_1 -pg 1 -lvl 2 -x 450 -y 880 -defaultsOSRD
+preplace inst BtnControl_0 -pg 1 -lvl 5 -x 1720 -y 850 -defaultsOSRD
+preplace netloc CLK_1 1 0 13 NJ 430 280 210 620 140 960J 310 1540J 170 N 170 2320 240 2560J 160 2950 240 3240J 200 3720 240 NJ 240 4400J
+preplace netloc RESETn_1 1 0 13 NJ 410 290 220 630 110 950J 30 NJ 30 N 30 2300 280 2620J 200 2980 280 3260J 180 3690 320 4040J 230 4410J
+preplace netloc Load_1 1 0 13 -40 140 N 140 610 130 1000J 260 NJ 260 1860 210 2310 270 2570J 170 2990 290 3250J 170 3710 280 4030J 250 4370J
+preplace netloc UnD_1 1 0 13 -30J 150 N 150 600 150 980J 270 NJ 270 1870 220 2330 260 2580J 180 3000 250 3270J 210 3730 250 4010J 220 4380J
+preplace netloc DataExpand3out_0_Dout0 1 1 2 N 310 N
+preplace netloc util_vector_logic_0_Res 1 3 3 970 330 NJ 330 N
+preplace netloc DataExpand3out_0_Dout1 1 1 3 270 120 N 120 950J
+preplace netloc Digit1_TC 1 4 2 1550 200 1840
+preplace netloc util_vector_logic_1_Res 1 6 2 2280 300 2620J
+preplace netloc DataExpand3out_0_Dout2 1 1 6 250 80 N 80 990J 250 1520J 240 1830 190 2290J
+preplace netloc Digit2_TC 1 7 1 2590 140n
+preplace netloc util_vector_logic_2_Res 1 8 2 2970 330 NJ
+preplace netloc DataExpand3out_0_Dout3 1 1 8 260 100 N 100 930J 280 NJ 280 1890 240 2260J 290 2610J 190 3010J
+preplace netloc DataExpand3out_0_Dout4 1 1 10 NJ 230 590 370 NJ 370 1560J 250 1850 200 2250J 370 NJ 370 NJ 370 3300J 190 3700
+preplace netloc Digit3_TC 1 9 1 3280 140n
+preplace netloc Digit4_TC 1 11 1 4020 140n
+preplace netloc util_vector_logic_3_Res 1 10 2 3650 330 NJ
+preplace netloc util_vector_logic_4_Res 1 12 2 4360 550 NJ
+preplace netloc Digit5_TC 1 13 1 4650 450n
+preplace netloc util_vector_logic_5_Res 1 14 1 NJ 540
+preplace netloc DataExpand3out_0_Dout5 1 1 12 240 90 N 90 940J 290 NJ 290 1880 230 2240J 360 NJ 360 NJ 360 3320J 220 3700J 260 4000J 210 4390J
+preplace netloc Digit5_Q 1 13 1 4650 330n
+preplace netloc Digit4_Q 1 11 3 NJ 120 NJ 120 4640
+preplace netloc Digit3_Q 1 9 5 NJ 120 3680J 310 3970J 190 4410J 210 4630
+preplace netloc Digit2_Q 1 7 7 NJ 120 2960J 270 3290J 230 3660J 300 3960J 170 NJ 170 4670
+preplace netloc Digit1_Q 1 4 10 1560 180 N 180 2270J 350 NJ 350 NJ 350 3330J 240 3640J 290 3980J 180 NJ 180 4660J
+preplace netloc Digit0_Q 1 3 11 920 300 NJ 300 1900 250 NJ 250 2600J 210 2940J 260 3310J 250 3670J 270 3990J 200 NJ 200 4650J
+preplace netloc MODE_1 1 0 2 NJ 680 N
+preplace netloc SET_1 1 0 2 NJ 900 N
+preplace netloc BTNMonitor_0_CE_Dbg 1 2 13 N 610 NJ 610 NJ 610 N 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc BTNMonitor_0_BTN_Click 1 2 3 NJ 670 NJ 670 1530
+preplace netloc BTNMonitor_0_BTN_LongPress 1 2 3 NJ 690 NJ 690 1520
+preplace netloc BTNMonitor_1_BTN_Click 1 2 3 610 860 NJ 860 NJ
+preplace netloc DataConcat3in_0_Dout 1 14 1 N 280
+preplace netloc CE_1 1 0 3 -40J 370 300J 300 620
+preplace netloc DIN_1 1 0 1 N 260
+preplace netloc BtnControl_0_ADJ 1 5 10 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 N
+preplace netloc BtnControl_0_HS 1 5 10 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 N
+preplace netloc BtnControl_0_INC 1 5 10 N 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ
+levelinfo -pg 1 -60 120 450 810 1410 1720 2090 2450 2790 3130 3490 3850 4210 4520 4820 4990
+pagesize -pg 1 -db -bbox -sgen -170 -320 5100 1080
+"
+}
+0

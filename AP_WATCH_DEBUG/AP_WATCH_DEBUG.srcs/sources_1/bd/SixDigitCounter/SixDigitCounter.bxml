@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="39">
+  <CompositeFile CompositeFileTopName="SixDigitCounter" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1612623012"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1612623012"/>
+    <Generation Name="SIMULATION" State="STALE" Timestamp="1612623012"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1612623012"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip\SixDigitCounter_CntNbits_L_0_0\SixDigitCounter_CntNbits_L_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Digit0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611413967" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_CntNbits_L_0_1\SixDigitCounter_CntNbits_L_0_1.xci" Type="IP">
+        <Instance HierarchyPath="Digit1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611413967" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_DataExpand3out_0_1\SixDigitCounter_DataExpand3out_0_1.xci" Type="IP">
+        <Instance HierarchyPath="DataExpand3out_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611411951" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_Digit1_0\SixDigitCounter_Digit1_0.xci" Type="IP">
+        <Instance HierarchyPath="Digit2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611413967" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_util_vector_logic_0_2\SixDigitCounter_util_vector_logic_0_2.xci" Type="IP">
+        <Instance HierarchyPath="util_vector_logic_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611411951" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_Digit2_0\SixDigitCounter_Digit2_0.xci" Type="IP">
+        <Instance HierarchyPath="Digit3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611413967" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_util_vector_logic_1_0\SixDigitCounter_util_vector_logic_1_0.xci" Type="IP">
+        <Instance HierarchyPath="util_vector_logic_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611411951" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_Digit3_0\SixDigitCounter_Digit3_0.xci" Type="IP">
+        <Instance HierarchyPath="Digit4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611413967" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_util_vector_logic_2_0\SixDigitCounter_util_vector_logic_2_0.xci" Type="IP">
+        <Instance HierarchyPath="util_vector_logic_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611411952" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_Digit4_0\SixDigitCounter_Digit4_0.xci" Type="IP">
+        <Instance HierarchyPath="Digit5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611424319" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_util_vector_logic_3_0\SixDigitCounter_util_vector_logic_3_0.xci" Type="IP">
+        <Instance HierarchyPath="util_vector_logic_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611411952" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_util_vector_logic_4_0\SixDigitCounter_util_vector_logic_4_0.xci" Type="IP">
+        <Instance HierarchyPath="util_vector_logic_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611411952" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_DataConcat3in_0_1\SixDigitCounter_DataConcat3in_0_1.xci" Type="IP">
+        <Instance HierarchyPath="DataConcat3in_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611411952" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_BTNMonitor_0_2\SixDigitCounter_BTNMonitor_0_2.xci" Type="IP">
+        <Instance HierarchyPath="BTNMonitor_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611604358" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_BTNMonitor_0_3\SixDigitCounter_BTNMonitor_0_3.xci" Type="IP">
+        <Instance HierarchyPath="BTNMonitor_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611604359" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\SixDigitCounter_BtnControl_0_2\SixDigitCounter_BtnControl_0_2.xci" Type="IP">
+        <Instance HierarchyPath="BtnControl_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1611779031" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth\SixDigitCounter.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+      </File>
+      <File Name="sim\SixDigitCounter.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="SixDigitCounter_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff\SixDigitCounter.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff\SixDigitCounter_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="synth\SixDigitCounter.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim\SixDigitCounter.protoinst">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

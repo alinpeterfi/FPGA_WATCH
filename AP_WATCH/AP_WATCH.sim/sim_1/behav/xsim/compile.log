@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VIVADO_SFPGA/AP_WATCH/AP_WATCH.ip_user_files/bd/SixDigitCounter/sim/SixDigitCounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SixDigitCounter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VIVADO_SFPGA/AP_WATCH/AP_WATCH.srcs/sources_1/bd/SixDigitCounter/hdl/SixDigitCounter_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SixDigitCounter_wrapper'

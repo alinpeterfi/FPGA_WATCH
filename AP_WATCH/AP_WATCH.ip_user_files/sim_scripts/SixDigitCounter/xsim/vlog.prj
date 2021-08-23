@@ -1,0 +1,12 @@
+verilog xil_defaultlib  \
+"../../../bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_0_3/sim/SixDigitCounter_util_vector_logic_0_3.v" \
+"../../../bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_0_4/sim/SixDigitCounter_util_vector_logic_0_4.v" \
+"../../../bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_0_5/sim/SixDigitCounter_util_vector_logic_0_5.v" \
+"../../../bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_0_6/sim/SixDigitCounter_util_vector_logic_0_6.v" \
+"../../../bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_3_0/sim/SixDigitCounter_util_vector_logic_3_0.v" \
+"../../../bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_0_7/sim/SixDigitCounter_util_vector_logic_0_7.v" \
+"../../../bd/SixDigitCounter/ip/SixDigitCounter_util_vector_logic_5_0/sim/SixDigitCounter_util_vector_logic_5_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

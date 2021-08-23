@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Feb  6 16:50:12 2021" VIVADOVERSION="2020.1">
+
+  <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys4_ddr:part0:1.1" DEVICE="7a100t" NAME="SixDigitCounter" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Digit0" PORT="CLK"/>
+        <CONNECTION INSTANCE="Digit1" PORT="CLK"/>
+        <CONNECTION INSTANCE="Digit2" PORT="CLK"/>
+        <CONNECTION INSTANCE="Digit3" PORT="CLK"/>
+        <CONNECTION INSTANCE="Digit4" PORT="CLK"/>
+        <CONNECTION INSTANCE="Digit5" PORT="CLK"/>
+        <CONNECTION INSTANCE="BTNMonitor_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="BTNMonitor_1" PORT="CLK"/>
+        <CONNECTION INSTANCE="BtnControl_0" PORT="CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="RESETn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESETn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Digit0" PORT="RESETn"/>
+        <CONNECTION INSTANCE="Digit1" PORT="RESETn"/>
+        <CONNECTION INSTANCE="Digit2" PORT="RESETn"/>
+        <CONNECTION INSTANCE="Digit3" PORT="RESETn"/>
+        <CONNECTION INSTANCE="Digit4" PORT="RESETn"/>
+        <CONNECTION INSTANCE="Digit5" PORT="RESETn"/>
+        <CONNECTION INSTANCE="BTNMonitor_0" PORT="RESETn"/>
+        <CONNECTION INSTANCE="BTNMonitor_1" PORT="RESETn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="UnD" SIGIS="undef" SIGNAME="External_Ports_UnD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Digit0" PORT="UnD"/>
+        <CONNECTION INSTANCE="Digit1" PORT="UnD"/>
+        <CONNECTION INSTANCE="Digit2" PORT="UnD"/>
+        <CONNECTION INSTANCE="Digit3" PORT="UnD"/>
+        <CONNECTION INSTANCE="Digit4" PORT="UnD"/>
+        <CONNECTION INSTANCE="Digit5" PORT="UnD"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="TC" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_5_Res">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="util_vector_logic_5" PORT="Res"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="MODE" SIGIS="undef" SIGNAME="External_Ports_MODE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BTNMonitor_0" PORT="BTN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SET" SIGIS="undef" SIGNAME="External_Ports_SET">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BTNMonitor_1" PORT="BTN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CE_Dbg" SIGIS="undef" SIGNAME="BTNMonitor_0_CE_Dbg">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BTNMonitor_0" PORT="CE_Dbg"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="DataConcat3in_0_Dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DataConcat3in_0" PORT="Dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="CE" SIGIS="undef" SIGNAME="External_Ports_CE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Digit0" PORT="CE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="23" NAME="DIN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_DIN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DataExpand3out_0" PORT="DIN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ADJ" SIGIS="undef" SIGNAME="BtnControl_0_ADJ">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BtnControl_0" PORT="ADJ"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="HS" SIGIS="undef" SIGNAME="BtnControl_0_HS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BtnControl_0" PORT="HS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="INC" SIGIS="undef" SIGNAME="BtnControl_0_INC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BtnControl_0" PORT="INC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Load" SIGIS="undef" SIGNAME="External_Ports_Load">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Digit0" PORT="Load"/>
+        <CONNECTION INSTANCE="Digit1" PORT="Load"/>
+        <CONNECTION INSTANCE="Digit2" PORT="Load"/>
+        <CONNECTION INSTANCE="Digit3" PORT="Load"/>
+        <CONNECTION INSTANCE="Digit4" PORT="Load"/>
+        <CONNECTION INSTANCE="Digit5" PORT="Load"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/BTNMonitor_0" HWVERSION="1.0" INSTANCE="BTNMonitor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BTNMonitor" VLNV="xilinx.com:module_ref:BTNMonitor:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="SAMPLE_DIV_RATE" VALUE="5"/>
+        <PARAMETER NAME="StableTimeSamples" VALUE="3"/>
+        <PARAMETER NAME="LPTimeSamples" VALUE="100"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_BTNMonitor_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESETn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESETn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESETn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTN" SIGIS="undef" SIGNAME="External_Ports_MODE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MODE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CE_Dbg" SIGIS="undef" SIGNAME="BTNMonitor_0_CE_Dbg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CE_Dbg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="StC_Dbg" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="6" NAME="StN_Dbg" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="BTN_Click" SIGIS="undef" SIGNAME="BTNMonitor_0_BTN_Click">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BtnControl_0" PORT="MODE_Click"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BTN_LongPress" SIGIS="undef" SIGNAME="BTNMonitor_0_BTN_LongPress">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BtnControl_0" PORT="MODE_LP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BTN_LPRelease" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/BTNMonitor_1" HWVERSION="1.0" INSTANCE="BTNMonitor_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BTNMonitor" VLNV="xilinx.com:module_ref:BTNMonitor:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="SAMPLE_DIV_RATE" VALUE="5"/>
+        <PARAMETER NAME="StableTimeSamples" VALUE="3"/>
+        <PARAMETER NAME="LPTimeSamples" VALUE="100"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_BTNMonitor_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESETn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESETn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESETn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTN" SIGIS="undef" SIGNAME="External_Ports_SET">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SET"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CE_Dbg" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="6" NAME="StC_Dbg" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="6" NAME="StN_Dbg" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="BTN_Click" SIGIS="undef" SIGNAME="BTNMonitor_1_BTN_Click">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BtnControl_0" PORT="SET_Click"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BTN_LongPress" SIGIS="undef"/>
+        <PORT DIR="O" NAME="BTN_LPRelease" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/BtnControl_0" HWVERSION="1.0" INSTANCE="BtnControl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BtnControl" VLNV="xilinx.com:module_ref:BtnControl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_BtnControl_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="MODE_Click" SIGIS="undef" SIGNAME="BTNMonitor_0_BTN_Click">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BTNMonitor_0" PORT="BTN_Click"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="MODE_LP" SIGIS="undef" SIGNAME="BTNMonitor_0_BTN_LongPress">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BTNMonitor_0" PORT="BTN_LongPress"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SET_Click" SIGIS="undef" SIGNAME="BTNMonitor_1_BTN_Click">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BTNMonitor_1" PORT="BTN_Click"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ADJ" SIGIS="undef" SIGNAME="BtnControl_0_ADJ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ADJ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HS" SIGIS="undef" SIGNAME="BtnControl_0_HS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="HS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="INC" SIGIS="undef" SIGNAME="BtnControl_0_INC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="INC"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/DataConcat3in_0" HWVERSION="1.0" INSTANCE="DataConcat3in_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DataConcat3in" VLNV="xilinx.com:module_ref:DataConcat3in:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="WIDTH0" VALUE="4"/>
+        <PARAMETER NAME="WIDTH1" VALUE="4"/>
+        <PARAMETER NAME="WIDTH2" VALUE="4"/>
+        <PARAMETER NAME="WIDTH3" VALUE="4"/>
+        <PARAMETER NAME="WIDTH4" VALUE="4"/>
+        <PARAMETER NAME="WIDTH5" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_DataConcat3in_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din0" RIGHT="0" SIGIS="undef" SIGNAME="Digit0_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit0" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din1" RIGHT="0" SIGIS="undef" SIGNAME="Digit1_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit1" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din2" RIGHT="0" SIGIS="undef" SIGNAME="Digit2_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit2" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din3" RIGHT="0" SIGIS="undef" SIGNAME="Digit3_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit3" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din4" RIGHT="0" SIGIS="undef" SIGNAME="Digit4_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit4" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din5" RIGHT="0" SIGIS="undef" SIGNAME="Digit5_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit5" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="DataConcat3in_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/DataExpand3out_0" HWVERSION="1.0" INSTANCE="DataExpand3out_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DataExpand3out" VLNV="xilinx.com:module_ref:DataExpand3out:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="WIDTH5" VALUE="4"/>
+        <PARAMETER NAME="WIDTH4" VALUE="4"/>
+        <PARAMETER NAME="WIDTH3" VALUE="4"/>
+        <PARAMETER NAME="WIDTH2" VALUE="4"/>
+        <PARAMETER NAME="WIDTH1" VALUE="4"/>
+        <PARAMETER NAME="WIDTH0" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_DataExpand3out_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="DIN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_DIN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DIN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout5" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit5" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout4" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit4" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout3" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit3" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout2" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit2" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout1" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit1" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout0" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit0" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Digit0" HWVERSION="1.0" INSTANCE="Digit0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CntNbits_L" VLNV="xilinx.com:module_ref:CntNbits_L:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NUMBITS" VALUE="4"/>
+        <PARAMETER NAME="LIMIT" VALUE="9"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_CntNbits_L_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESETn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESETn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESETn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Load" SIGIS="undef" SIGNAME="External_Ports_Load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="UnD" SIGIS="undef" SIGNAME="External_Ports_UnD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UnD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CE" SIGIS="undef" SIGNAME="External_Ports_CE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataExpand3out_0" PORT="Dout0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="Digit0_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataConcat3in_0" PORT="Din0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TC" SIGIS="undef" SIGNAME="Digit0_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_1" PORT="Op2"/>
+            <CONNECTION INSTANCE="Digit1" PORT="CE"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Digit1" HWVERSION="1.0" INSTANCE="Digit1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CntNbits_L" VLNV="xilinx.com:module_ref:CntNbits_L:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NUMBITS" VALUE="4"/>
+        <PARAMETER NAME="LIMIT" VALUE="5"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_CntNbits_L_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESETn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESETn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESETn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Load" SIGIS="undef" SIGNAME="External_Ports_Load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="UnD" SIGIS="undef" SIGNAME="External_Ports_UnD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UnD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CE" SIGIS="undef" SIGNAME="Digit0_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit0" PORT="TC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataExpand3out_0" PORT="Dout1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="Digit1_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataConcat3in_0" PORT="Din1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TC" SIGIS="undef" SIGNAME="Digit1_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_1" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Digit2" HWVERSION="1.0" INSTANCE="Digit2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CntNbits_L" VLNV="xilinx.com:module_ref:CntNbits_L:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NUMBITS" VALUE="4"/>
+        <PARAMETER NAME="LIMIT" VALUE="9"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_Digit1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESETn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESETn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESETn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Load" SIGIS="undef" SIGNAME="External_Ports_Load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="UnD" SIGIS="undef" SIGNAME="External_Ports_UnD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UnD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CE" SIGIS="undef" SIGNAME="util_vector_logic_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataExpand3out_0" PORT="Dout2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="Digit2_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataConcat3in_0" PORT="Din2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TC" SIGIS="undef" SIGNAME="Digit2_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Digit3" HWVERSION="1.0" INSTANCE="Digit3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CntNbits_L" VLNV="xilinx.com:module_ref:CntNbits_L:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NUMBITS" VALUE="4"/>
+        <PARAMETER NAME="LIMIT" VALUE="5"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_Digit2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESETn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESETn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESETn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Load" SIGIS="undef" SIGNAME="External_Ports_Load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="UnD" SIGIS="undef" SIGNAME="External_Ports_UnD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UnD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CE" SIGIS="undef" SIGNAME="util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataExpand3out_0" PORT="Dout3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="Digit3_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataConcat3in_0" PORT="Din3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TC" SIGIS="undef" SIGNAME="Digit3_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_3" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Digit4" HWVERSION="1.0" INSTANCE="Digit4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CntNbits_L" VLNV="xilinx.com:module_ref:CntNbits_L:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NUMBITS" VALUE="4"/>
+        <PARAMETER NAME="LIMIT" VALUE="9"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_Digit3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESETn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESETn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESETn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Load" SIGIS="undef" SIGNAME="External_Ports_Load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="UnD" SIGIS="undef" SIGNAME="External_Ports_UnD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UnD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CE" SIGIS="undef" SIGNAME="util_vector_logic_3_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_3" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataExpand3out_0" PORT="Dout4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="Digit4_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataConcat3in_0" PORT="Din4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TC" SIGIS="undef" SIGNAME="Digit4_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_4" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Digit5" HWVERSION="1.0" INSTANCE="Digit5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CntNbits_L" VLNV="xilinx.com:module_ref:CntNbits_L:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NUMBITS" VALUE="4"/>
+        <PARAMETER NAME="LIMIT" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_Digit4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESETn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_RESETn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESETn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Load" SIGIS="undef" SIGNAME="External_Ports_Load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="UnD" SIGIS="undef" SIGNAME="External_Ports_UnD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UnD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CE" SIGIS="undef" SIGNAME="util_vector_logic_4_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_4" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="DataExpand3out_0_Dout5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataExpand3out_0" PORT="Dout5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="Digit5_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataConcat3in_0" PORT="Din5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TC" SIGIS="undef" SIGNAME="Digit5_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_5" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/util_vector_logic_1" HWVERSION="2.0" INSTANCE="util_vector_logic_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_util_vector_logic_0_2"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="Digit1_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit1" PORT="TC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="Digit0_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit0" PORT="TC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_2" PORT="Op2"/>
+            <CONNECTION INSTANCE="Digit2" PORT="CE"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/util_vector_logic_2" HWVERSION="2.0" INSTANCE="util_vector_logic_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_util_vector_logic_1_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="Digit2_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit2" PORT="TC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_3" PORT="Op2"/>
+            <CONNECTION INSTANCE="Digit3" PORT="CE"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/util_vector_logic_3" HWVERSION="2.0" INSTANCE="util_vector_logic_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_util_vector_logic_2_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="Digit3_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit3" PORT="TC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_3_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_4" PORT="Op2"/>
+            <CONNECTION INSTANCE="Digit4" PORT="CE"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/util_vector_logic_4" HWVERSION="2.0" INSTANCE="util_vector_logic_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_util_vector_logic_3_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="Digit4_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit4" PORT="TC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_3_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_3" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_4_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_5" PORT="Op2"/>
+            <CONNECTION INSTANCE="Digit5" PORT="CE"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/util_vector_logic_5" HWVERSION="2.0" INSTANCE="util_vector_logic_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="SixDigitCounter_util_vector_logic_4_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="Digit5_TC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Digit5" PORT="TC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_4_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_4" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_5_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="TC"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,7 @@
+Running: xsim.dir/Sim_SixDigitCounter_behav/xsimk.exe -simmode gui -wdb Sim_SixDigitCounter_behav.wdb -simrunnum 0 -socket 56419
+Design successfully loaded
+Design Loading Memory Usage: 7236 KB (Peak: 7236 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 15972 KB (Peak: 15972 KB)
+Simulation CPU Usage: 483 ms

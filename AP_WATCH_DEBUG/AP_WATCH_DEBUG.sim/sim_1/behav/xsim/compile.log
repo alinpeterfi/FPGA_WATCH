@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VIVADO_SFPGA/AP_WATCH_DEBUG/AP_WATCH_DEBUG.srcs/sources_1/new/BtnControl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BtnControl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VIVADO_SFPGA/AP_WATCH_DEBUG/AP_WATCH_DEBUG.ip_user_files/bd/SixDigitCounter/ip/SixDigitCounter_BtnControl_0_2/sim/SixDigitCounter_BtnControl_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SixDigitCounter_BtnControl_0_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VIVADO_SFPGA/AP_WATCH_DEBUG/AP_WATCH_DEBUG.ip_user_files/bd/SixDigitCounter/sim/SixDigitCounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SixDigitCounter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VIVADO_SFPGA/AP_WATCH_DEBUG/AP_WATCH_DEBUG.srcs/sources_1/bd/SixDigitCounter/hdl/SixDigitCounter_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SixDigitCounter_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VIVADO_SFPGA/AP_WATCH_DEBUG/AP_WATCH_DEBUG.srcs/sim_1/new/Sim_SixDigitCounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sim_SixDigitCounter'
